@@ -9,6 +9,17 @@
  * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
 
+body {
+    background-image: url(../../images/bg2.jpeg);
+    background-attachment: fixed;
+    top: 0%;
+    left: 0%;
+    background-repeat:no-repeat;
+    background-position:right top;
+}
+
+/* BANNIERE  ------------------------ */
+
 .nom {
     text-align: center;
     color: #fff;
@@ -20,32 +31,12 @@
     width: 100%;
   }
 
-.test {
-    position: absolute;
-    left: 3rem;
-    top: 5rem;
-    text-align: left;
-    color: #fff;
-    font-size: 3rem;
-}
+/* FIN BANNIERE  ------------------------ */
 
-
-.texteP {
-    position: absolute;
-    text-align: left;
-    
-    opacity: 1;
-    left: 3rem;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    margin: 0;
-    width: 100%;
-}
 
 .imageMoi {
     position: absolute; 
-
-    top: 0%;
+    bottom: 0%;
     right: 50%;
 }
 
@@ -56,20 +47,8 @@
 }
 
 
-
-
-.lannion {
-    background-image: url(../../images/Lannion.jfif);
-    z-index: -1;
-}
-
 .img1 {
     background-image: url(../../images/bg2.jpeg);
-    z-index: -1;
-}
-
-.imgOrion {
-    background-image: url(../../images/Orion\ -\ Copie.jpg);
     z-index: -1;
 }
 
@@ -78,18 +57,37 @@
     z-index: -1;
 }
 
-.text {
+
+/* FIN DIFFERENTES IMAGES  ------------------------ */
+
+
+
+/* TEXTE SUR LA GAUCHE  ------------------------ */
+
+.texteP {
     position: absolute;
-    right: 5%;
-    top: 5rem;
-    text-align: center;
+    text-align: left;
     opacity: 1;
-    font-size: 4rem;
+    left: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     margin: 0;
     width: 100%;
 }
 
+.test {
+    position: absolute;
+    left: 3rem;
+    top: 5rem;
+    text-align: left;
+    color: #fff;
+    font-size: 3rem;
+}
+
+
+/* FIN TEXTE GAUCHE  ------------------------ */
+
+/* BOITE  ------------------------ */
 
 .box {
     position: relative;
@@ -125,14 +123,39 @@
     padding-top: 2rem;
   }
 
+  .text {
+    position: absolute;
+    right: 5%;
+    top: 5rem;
+    text-align: center;
+    opacity: 1;
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 0;
+    width: 100%;
+}
+
+/* FIN BOITE ------------------------ */
+
+/* LIEN ------------------------ */
+
   a{
       text-decoration: none;
+      color: white;
   }
+
+  a:link{
+    text-decoration: none;
+    color: white;
+}
+/* FIN LIEN ------------------------ */
+
+/* BOUTON ------------------------ */
 
   .learn {
     position: relative;
     background: transparent;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #fff;
     border: 1px solid rgba(255,255,255,0.3);
     padding: 2rem;
@@ -143,10 +166,134 @@
     text-decoration: none;
   }
 
+  .learn p {
+    margin: 0;
+  }
+
+  .learn p a {
+      color: white;
+  }
+
   .learn:hover {
     background: rgba(255,255,255,0.9);
     color: black;
   }
+
+  /* FIN BOUTON ------------------------ */
+
+/* PAGE COMPETENCES ------------------------ */
+
+.web {
+    background-color: rgba(210, 71, 245, 0.5);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 0;
+}
+
+.infoWeb {
+    transform: scale(0) rotateZ(-180deg);
+    position: absolute;
+    background-color: rgba(214, 38, 38, 1);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 1px 1px 0 0.5px rgba(0,0,0,0.3);
+    /*border-bottom: 3px solid rgba(255,255,255,0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;*/
+    transition: 1s;
+}
+
+.infoWeb:before {
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid rgba(214, 38, 38, 1);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 200px;
+}
+
+.web:hover > .infoWeb{
+    transform: scale(1) rotateZ(0deg);
+}
+
+
+.bdd {
+    background-color: rgba(18, 185, 214, 0.5);
+    padding: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.infoBdd {
+    transform: scale(0) rotateZ(-180deg);
+    position: absolute;
+    background-color: rgba(214, 38, 38, 1);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 1px 1px 0 0.5px rgba(0,0,0,0.3);
+    /*border-bottom: 3px solid rgba(255,255,255,0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;*/
+    margin-left: 400px;
+    transition: 1s;
+}
+
+.infoBdd:before {
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid rgba(214, 38, 38, 1);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 200px;
+}
+
+.bdd:hover > .infoBdd{
+    transform: scale(1) rotateZ(0deg);
+}
+
+.orga {
+    background-color: rgba(210, 71, 245, 0.5);
+    padding: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.infoOrga {
+    transform: scale(0) rotateZ(-180deg);
+    position: absolute;
+    background-color: rgba(214, 38, 38, 1);
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 1px 1px 0 0.5px rgba(0,0,0,0.3);
+    /*border-bottom: 3px solid rgba(255,255,255,0.3);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;*/
+    transition: 1s;
+    margin-left: 200px;
+}
+
+.infoOrga:before {
+    content: '';
+    position: absolute;
+    border-bottom: 8px solid rgba(214, 38, 38, 1);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: -16px;
+    margin-left: 200px;
+}
+
+.orga:hover > .infoOrga{
+    transform: scale(1) rotateZ(0deg);
+}
+
+
+
+
+/* FIN PAGE COMPETENCES ------------------------ */
+
+  /* CONTROLE SLIDE ----------------------*/
 
 html.fp-enabled,
 .fp-enabled body {
@@ -162,6 +309,7 @@ html.fp-enabled,
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
     box-sizing: border-box;
+    background: transparent !important;
     
 }
 .fp-slide {
@@ -191,7 +339,6 @@ html.fp-enabled,
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #000;
 }
 .fp-slidesContainer {
     float: left;
@@ -314,7 +461,6 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
